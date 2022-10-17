@@ -1,11 +1,11 @@
 # CECP-decision-making-tool
 
 ### Authors
-Croci Francesco
-d’Arenzo Daniele
-Fumagalli Alberto
-Gambaro Enrico
-Neri Francesco
+Croci Francesco\
+d’Arenzo Daniele\
+Fumagalli Alberto\
+Gambaro Enrico\
+Neri Francesco\
 Samandari Ahmad
 
 ## Libraries to install:
@@ -37,8 +37,8 @@ x) warning!! be sure no desktop.ini file in dictionaries folder otherwise code w
 1) go to Script_alone\Find_device_type    OR  Script_alone\Find_medical_Field
 2) if you don't have devices.csv file (csv containing only devices name column) execute main.py in the folder extract_device_column
 3) to provide flexibility, we added min-max value of search (to split work in different stages, becouse it requires a lot of time) in the file main.py
-4)Execute main.py, a file is added in the folder during the process containing values found
-5)After getting all the ranges, put all the files in merging\range folder and run Merge_ranges.py, be sure you have in the merging folder result.csv file (df to attach new column)
+4) Execute main.py, a file is added in the folder during the process containing values found
+5) After getting all the ranges, put all the files in merging\range folder and run Merge_ranges.py, be sure you have in the merging folder result.csv file (df to attach new column)
 x) warning!! be sure no desktop.ini file in dictionaries folder otherwise code will fail
 
 
