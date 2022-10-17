@@ -1,0 +1,133 @@
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 0.2rem 1rem 1rem 1rem;
+  background-color: #f3f3f3;
+  z-index: 999;
+}
+
+#sidebar h2 {
+  text-align: left;
+  margin-bottom: 0;
+  font-size:3rem;
+}
+
+#blurb,#sidebar-toggle,#sidebar-settings,#searchIcon {
+  display: none;
+}
+
+#collapse *:first-child {
+  margin-top: 1rem;
+}
+
+#page-content {
+  margin-top: 9rem;
+  margin-right: 3rem;
+  margin-left: 1rem;
+}
+.row {
+  flex-direction: column;
+}
+.fa-cog:hover,.fa-bars:hover{
+  color: #9c9c9c;
+}
+
+.navbar-toggler{
+  color: rgba(15, 15, 15, 0.5);
+  border: 0;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.table td, .table th {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.Select-menu-outer { display : block !important; }    /* becouse of a bug of plotly datatable with bootstrap components*/
+.dash-filter input {            /*becouse of a plotly bug of datatables */
+  text-align: left !important;
+  padding-left: 5px !important;
+}
+.dash-table-tooltip{      /*set tooltip width, no more used */
+  width: 40rem !important; 
+  max-width: 40rem !important;
+}
+
+@media (min-width: 48em) {
+  #sidebar {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 20rem;
+    text-align: left;
+    transition: margin 0.2s ease-in-out, padding 0.2s ease-in-out;
+  }
+  #sidebar-settings{display: inline-block;}
+  #sidebar-toggle{
+    display: inline-block;
+    position: relative;
+    top: 0;
+  }
+  #settings{
+    display: inline-block;
+    position:absolute;
+    bottom:0.5rem;
+    right:-0.5rem;
+  }
+  #searchIcon{display: flex;}
+  #popover-target{
+    position: relative;
+    top: 0;
+    right:0.7rem;
+  }
+  .popover{
+    width:40rem;    /*seems not working properly */
+  }
+
+  /* add negative margin to sidebar to achieve the collapse */
+  #sidebar.collapsed {
+    margin-left: -15.5rem;
+    padding-right: 0.5rem;
+  }
+
+  /* move all contents of navbar other than header (containing toggle) further
+     off-screen */
+  #sidebar.collapsed > *:not(:first-child) {
+    margin-left: -6rem;
+    margin-right: 6rem;
+  }
+
+  /* reveal the blurb on a large screen */
+  #blurb {
+    display: block;
+  }
+
+  /* Hide the toggle on a large screen */
+  #navbar-toggle,#navbar-settings {
+    display: none;
+  }
+
+  #collapse {
+    display: block;
+  }
+
+  /* set margins of the main content so that it doesn't overlap the sidebar */
+  #page-content {
+    margin-left: 6.5rem;
+    margin-right: 2rem;
+    margin-top: 0rem;
+  }
+
+  .row {
+    flex-direction: row;
+  }
+}
