@@ -9,14 +9,14 @@ Neri Francesco\
 Samandari Ahmad
 
 ## Libraries to install:
--progress
--sklearn
--dash-extensions  *  (name is correct, avaible through pip3)
--google  
--matplotlib
--requests  *
--scipy
--seaborn
+- progress
+- sklearn
+- dash-extensions  *  (name is correct, avaible through pip3)
+- google  
+- matplotlib
+- requests  *
+- scipy
+- seaborn
 
 ## EXECUTE DASHBOARD
 Dash is developed for an "offline mode", so data is instantly avaible but is possible to set constant updates that will download new data in a time interval provided.
